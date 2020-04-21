@@ -1,0 +1,10 @@
+Animal\Hospital\FinancialManagementRepository.class
+Animal\Hospital\Treated.class
+Animal\Hospital\AbstractEvent.class
+Animal\Hospital\FinancialManagement.class
+Animal\Hospital\KafkaListener.class
+Animal\Hospital\Application.class
+Animal\Hospital\FinancialManagementController.class
+Animal\Hospital\TreatmentFeeAccepted.class
+Animal\Hospital\config\kafka\KafkaProcessor.class
+Animal\Hospital\PolicyHandler.class
