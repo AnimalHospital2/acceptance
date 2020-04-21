@@ -25,7 +25,7 @@ public class KafkaListener {
 
             FinancialManagement financialManagement = new FinancialManagement();
             financialManagement.setReservationId(reservationReserved.getReservationId());
-            //financialManagement.setFee(10000.0);
+            financialManagement.setFee(10000L);
             financialManagementRepository.save(financialManagement);
         }
     }
