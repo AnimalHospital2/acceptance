@@ -23,11 +23,11 @@ spring:
                 value:
                   serde: org.apache.kafka.common.serialization.Serdes$StringSerde
       bindings:
-        event-in:
+        input:
           group: acceptance
           destination: animal
           contentType: application/json
-        event-out:
+        output:
           destination: animal
           contentType: application/json
 
@@ -46,19 +46,19 @@ spring:
       kafka:
         binder:
           brokers: my-kafka.kafka.svc.cluster.local:9092
-        streams:
-          binder:
-            configuration:
-              default:
-                key:
-                  serde: org.apache.kafka.common.serialization.Serdes$StringSerde
-                value:
-                  serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+#        streams:
+#          binder:
+#            configuration:
+#              default:
+#                key:
+#                  serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+#                value:
+#                  serde: org.apache.kafka.common.serialization.Serdes$StringSerde
       bindings:
-        event-in:
+        input:
           group: acceptance
           destination: animal
           contentType: application/json
-        event-out:
+        output:
           destination: animal
           contentType: application/json
